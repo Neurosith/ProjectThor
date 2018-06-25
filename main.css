@@ -1,23 +1,11 @@
-.darkBG{
-    background: #999;
+
+body {
+    background-color: #666;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.darkerBG{
-    background: #666;
-}
-
-.darkestBG{
-    background: #333;
-}
-
-.triangle{
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 100px solid red;
-    border-bottom: 50px solid transparent;
-
-}
 
 .footer {
     display: flex;
@@ -32,9 +20,25 @@
 
 }
 
-header{
-    background: red;
-    border-bottom: 50px;
- 
+.logo-box {
+  height: 210px;
+  width: 420px;
+  float: left;
+  background-color: #5c2839;
+}
 
+.TopButtons li {
+
+    display: inline;
+}
+
+
+.Twitter-Feed {
+    position: relative;
+    bottom: -155px;
+    left: -420px;
+    height: 750px;
+    width: 150px;
+    float: left;
+    background-color: #333;
 }

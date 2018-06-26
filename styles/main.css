@@ -22,7 +22,6 @@ body {
     display: flex;
     justify-content: center;
     background-color: #f00001;
-    box-shadow: 0 8px 2px -10px black;
 }
 
 .nav-container {
@@ -64,7 +63,6 @@ body {
     color: white;
     font-family: 'Muli', sans-serif;
     background-color: #f00001;
-    position: fixed;
 
 }
 
@@ -78,15 +76,4 @@ body {
 .TopButtons li {
 
     display: inline;
-}
-
-
-.Twitter-Feed {
-    position: relative;
-    bottom: -155px;
-    left: -420px;
-    height: 750px;
-    width: 150px;
-    float: left;
-    background-color: #333;
 }

@@ -56,6 +56,7 @@ body {
 }
 
 .footer {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +81,7 @@ body {
     display: inline;
 }
 
-#wrapper{
+#playerwrapper{
     width: 400px;
     margin: 5px auto;
     border-radius: 15px 15px;
@@ -88,7 +89,7 @@ body {
 }
 
 
-#wrapper nav {
+#playerwrapper nav {
     background-color: red;
     box-shadow: 5px 5px 5px grey;
     width: 400px;

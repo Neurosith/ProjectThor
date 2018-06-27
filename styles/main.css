@@ -1,4 +1,5 @@
 
+
 body {
     /* background-color: #666; */
     height: 100%;
@@ -6,42 +7,65 @@ body {
     margin: 0;
 }
 
-.btn {
-    background-color: #fff;
-    border: 1px solid #fff;
+.nav-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d2951;
+}
+
+#logo-container, #main-menu, #socials {
+    height: 50px;
+    background-color: lightcoral;
+}
+
+#logo-container {
+    width: 100px;
+    margin-left: 10px;
+}
+
+#main-menu {
+    width: 300px;
+}
+
+#socials {
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* .btn {
+    background-color: #f00001;
+    border: 1px solid #f00001;
     border-radius: 5%;
 }
 
 .btn:hover {
     background-color: #fff;
+    border: 1px solid #f00001;
     color: #f00001;
-    font-weight: 900;
-    border: 1px solid #fff;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #fff
+    background-color: #f00001;
+    box-shadow: 3px 3px 2px rgb(168, 167, 167);
 }
 
 .nav-container {
     display: flex;
-    width: 65%;
+    width: 100%;
     height: 100%;
     justify-content: space-between;
-    align-items: center;
 
 }
 
 .logo-container {
     height: 100%;
     width: 10%;
-}
-
-.logo-container h1 {
-    font-family: 'Muli', sans-serif;
-    color: #f00001;
+    background-color: green;
 }
 
 .links-container {
@@ -54,12 +78,13 @@ body {
 }
 
 .nav-link {
-    color: #f00001;
+    color: white;
     letter-spacing: 2px; 
     text-decoration: none;
-}
+} */
 
 .footer {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +94,7 @@ body {
     color: white;
     font-family: 'Muli', sans-serif;
     background-color: #f00001;
-    position: fixed;
+
 }
 
 .logo-box {
@@ -84,8 +109,64 @@ body {
     display: inline;
 }
 
-.twitter-feed {
-    right: 0;
+#playerwrapper{
     width: 400px;
-    border: 2px solid red;
+    margin: 5px auto;
+    border-radius: 15px 15px;
+    
+}
+
+
+#playerwrapper nav {
+    background-color: red;
+    box-shadow: 5px 5px 5px grey;
+    width: 400px;
+    padding-bottom: 1px;
+    border-radius: 15px;
+}
+
+#defaultBar{
+    height: 10px;
+    width: 400px;
+    position: relative;
+    background-color: grey;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#progressBar {
+    position: absolute;
+    height: 10px;
+    background-color: lightskyblue;
+    width: 100px;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+#playButton {
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-image: url("images/playbutton.png");
+    background-size: 88%;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 0;
+}
+
+#soundButton {
+    background-color: red;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-image: url("images/soundbutton.png");
+    background-size: 88%;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 0;
+}
+
+#soundButton:active , #playButton:active{
+    position: relative;
+    top: 2px;
 }

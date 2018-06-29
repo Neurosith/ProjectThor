@@ -29,71 +29,18 @@ body {
     margin: 0;
 }
 
-.nav-container {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--red-salsa);
+.navbar-brand {
+    font-family: 'Bebas';
+    font-size: 25px;
 }
 
-.nav-container .icon {
-    color: #fff;
-    display: none;
-    margin-right: 20px;
-    text-decoration: none;
-}
-
-#logo-container {
-    height: 50px;
-    width: 170px;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 5px 0 0 10px;
-}
-
-#logo-container h2 {
-    color: #fff;
-    font-family: 'Creshex';
-    font-size: 70px;
-}
-
-#main-menu {
-    height: 50px;
-    width: 700px;
-    margin-left: 50px;
+.main-menu {
+    width: 50%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-
-#main-menu a {
-    color: #fff;
-    letter-spacing: 2px;
-    text-decoration: none;
     font-family: 'Lato', sans-serif;
-}
-
-#main-menu a:hover {
-    color: #000;
-}
-
-#socials {
-    height: 50px;
-    width: 150px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#socials i { 
-    color: #fff;
-}
-
-#socials i:hover {
-    color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .footer {
@@ -182,33 +129,4 @@ body {
 #soundButton:active , #playButton:active{
     position: relative;
     top: 2px;
-}
-
-@media screen and (max-width: 750px) {
-    #main-menu, #socials {
-        display: none;
-    }
-
-    .nav-container a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .nav-container .responsive {
-        position: relative;
-    }
-
-    .nav-container .responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .nav-container .responsive #main-menu {
-        flex-direction: column;
-        display: block;
-        text-align: center;
-    }
 }

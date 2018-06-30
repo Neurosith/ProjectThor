@@ -35,6 +35,15 @@ body {
     letter-spacing: 3px;
 }
 
+.navbar-default {
+    background-color: var(--red-salsa);
+}
+
+.navbar .navbar-toggler {
+    border: transparent;
+    outline: none;
+}
+
 .main-menu {
     width: 50%;
     display: flex;
@@ -44,40 +53,11 @@ body {
     text-transform: uppercase;
 }
 
-/* .footer {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
-    height: 35px;
+.cd-section {
     width: 100%;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    background-color: var(--red-salsa);
+    height: 100vh;
+    background-color: lightblue;
 }
-
-.copyright {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightcoral;
-}
-
-.footer-container {
-    width: 15%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: lightcoral;
-}
-
-.footer a i {
-    color: #fff;
-} */
 
 .footer {
     bottom: 0;
@@ -86,7 +66,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     background-color: var(--red-salsa);
 }
 
@@ -98,7 +78,7 @@ body {
     align-items: center;
 }
 
-#social-links a > i {
+#social-links a>i {
     color: #fff;
 }
 
@@ -119,24 +99,21 @@ body {
 }
 
 .logo-box {
-  height: 210px;
-  width: 420px;
-  float: left;
-  background-color: #5c2839;
+    height: 210px;
+    width: 420px;
+    float: left;
+    background-color: #5c2839;
 }
 
 .TopButtons li {
-
     display: inline;
 }
 
-#playerwrapper{
+#playerwrapper {
     width: 400px;
     margin: 5px auto;
     border-radius: 15px 15px;
-    
 }
-
 
 #playerwrapper nav {
     background-color: red;
@@ -146,7 +123,7 @@ body {
     border-radius: 15px;
 }
 
-#defaultBar{
+#defaultBar {
     height: 10px;
     width: 400px;
     position: relative;
@@ -160,7 +137,6 @@ body {
     background-color: lightskyblue;
     width: 100px;
     border-radius: 15px 15px 0px 0px;
-    
 }
 
 #playButton {
@@ -187,19 +163,22 @@ body {
     outline: 0;
 }
 
-#soundButton:active , #playButton:active{
+#soundButton:active,
+#playButton:active {
     position: relative;
     top: 2px;
 }
 
 @media screen and (max-width: 900px) {
-    #social-links, #copyright {
+    #social-links,
+    #copyright {
         width: 30%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    #social-links, #copyright {
+    #social-links,
+    #copyright {
         width: 30%;
     }
 }
@@ -209,12 +188,10 @@ body {
         flex-direction: column;
         height: 90px;
     }
-
     #social-links {
         height: 55px;
         width: 100%;
     }
-
     #copyright {
         height: 35px;
         width: 100%;

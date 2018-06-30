@@ -18,8 +18,8 @@
 }
 
 @font-face {
-    font-family: 'Creshex';
-    src: url(../assets/fonts/Creshex\ Brush.ttf);
+    font-family: 'WhoopAss';
+    src: url(../assets/fonts/WHOOPASS.TTF);
 }
 
 body {
@@ -30,8 +30,9 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Bebas';
-    font-size: 25px;
+    font-family: 'WhoopAss';
+    font-size: 35px;
+    letter-spacing: 3px;
 }
 
 .main-menu {
@@ -43,10 +44,10 @@ body {
     text-transform: uppercase;
 }
 
-.footer {
+/* .footer {
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     bottom: 0;
     height: 35px;
@@ -54,7 +55,67 @@ body {
     color: white;
     font-family: 'Lato', sans-serif;
     background-color: var(--red-salsa);
+}
 
+.copyright {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.footer-container {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.footer a i {
+    color: #fff;
+} */
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--red-salsa);
+}
+
+#social-links {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social-links a > i {
+    color: #fff;
+}
+
+#copyright {
+    width: 15%;
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#copyright p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
 }
 
 .logo-box {
@@ -129,4 +190,33 @@ body {
 #soundButton:active , #playButton:active{
     position: relative;
     top: 2px;
+}
+
+@media screen and (max-width: 900px) {
+    #social-links, #copyright {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #social-links, #copyright {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        height: 90px;
+    }
+
+    #social-links {
+        height: 55px;
+        width: 100%;
+    }
+
+    #copyright {
+        height: 35px;
+        width: 100%;
+    }
 }
